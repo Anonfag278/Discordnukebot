@@ -1,4 +1,4 @@
-# Discord test bot
+# Discord nuke bot
 
 Python 3.12+ and discord.py. Any member with slash-command access can invoke the bot. Confirmation is single-use, expires after 60 seconds, and is restricted to the requester in the same server.
 
@@ -21,9 +21,9 @@ NUKE_MESSAGE="the bomb has been dropped"
 NUKE_MESSAGE_COUNT=100
 ```
 
-The count must be 1–100; text must contain 1–2000 characters. Messages are sent only in the channel where the command is invoked. The bot waits one second after each completed send before attempting the next; Discord rate limits can extend the wait. All mentions are disabled, including user, role, @everyone, and @here mentions in custom text.
+The count must be 1–100; text must contain 1–2000 characters. Messages are sent only in the channel where the command is invoked. The bot waits one second after each completed send before attempting the next; Discord rate limits can extend the wait. All mentions are enabled, including user, role, @everyone, and @here mentions in custom text.
 
-Old ENABLE_MASS_MENTIONS, TEST_GUILD_ID, NOTIFICATION_CHANNEL_ID, NUKE_GIF_URL, and TEST_ROLE_IDS settings are ignored. This version sends text, with no GIF uploads or simulated events. The previously supplied nuke.gif remains in the folder as an unused asset. Keep your .env private.
+The previously supplied nuke.gif remains in the folder as an unused asset. Keep your .env private.
 
 Start or restart the bot after changing settings:
 
